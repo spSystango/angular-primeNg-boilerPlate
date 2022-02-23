@@ -1,0 +1,36 @@
+<!-- /* 
+       You can find more option about the primeNg sidebar at @refrence link
+       https://www.primefaces.org/primeng/v12-lts/#/sidebar
+     */ 
+-->
+<div class="layout-topbar">
+  <a class="layout-right-panel-button layout-topbar-icon" ><i class="pi pi-ellipsis-v"></i></a>
+
+  <a (click)="toggleSideBar()" class="layout-menu-button layout-topbar-icon">
+    <i class="pi pi-bars"></i>
+  </a>
+  <a href="#" class="layout-topbar-logo">
+    <img id="topbar-logo" src="assets/images/logo-roma-white.svg">
+  </a>
+    <span class="layout-topbar-search">
+      <i class="pi pi-search"></i>
+      <input type="text" placeholder="Enter your search term">
+    </span>
+  <ul class="topbar-menu">
+    <li class="user-profile">
+      <a href="#" class="ng-star-inserted">
+        <img src="assets/images/avatar.png" alt="roma-layout">
+        <div class="layout-profile-userinfo">
+          <span class="layout-profile-name">Arlene Welch</span>
+          <span class="layout-profile-role">Design Ops</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="layout-topbar-icon">
+        <i class="topbar-icon pi pi-fw pi-bell"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<app-sidebar></app-sidebar>
