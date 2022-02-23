@@ -1,0 +1,16 @@
+.sidebartoggler-icon{
+    margin-left: 70px;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    @media (max-width: 992px){
+        display: none;
+    }
+    i{
+        position: absolute;
+        font-size: 20px;
+        top: 9px;
+    }
+}
+

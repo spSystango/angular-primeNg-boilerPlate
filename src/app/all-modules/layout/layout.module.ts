@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {SidebarModule} from 'primeng/sidebar';
 import {PanelMenuModule} from 'primeng/panelmenu';
+import {MenuModule} from 'primeng/menu';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {PanelMenuModule} from 'primeng/panelmenu';
   imports: [
     CommonModule,
     SidebarModule,
-    PanelMenuModule
+    PanelMenuModule,
+    MenuModule
   ],exports:[
     HeaderComponent,
     FooterComponent,

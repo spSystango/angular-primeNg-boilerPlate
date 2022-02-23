@@ -1,8 +1,8 @@
 <div class="layout-wrapper layout-topbar-blue layout-slim layout-menu-light">
     <app-header></app-header>
 </div>
-<div class="content-wrapper">
-    <div class="card">
+<div class="content-wrapper" [ngClass]="isSidebarCollapsed ? 'sidebar-collapsed' : ''">
+    <div class="content-section">
         <p>pages works!</p>
     </div>
 </div>

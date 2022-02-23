@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+  public isSidebarCollapsed : boolean = false;
+  message = 'this is my message';
   constructor() { }
 
   ngOnInit(): void {
