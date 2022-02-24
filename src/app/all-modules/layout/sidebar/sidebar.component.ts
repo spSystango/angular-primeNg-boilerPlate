@@ -16,13 +16,14 @@ export class SidebarComponent implements OnInit {
       {
         label: 'Dashboard',
         icon: 'pi pi-pw pi-server',
+        routerLink:'/dashboard'
       },
       {
         label: 'Users',
         icon: 'pi pi-fw pi-users',
         items: [
-          { label: 'List', icon: 'pi pi-fw pi-user' },
-          { label: 'Add', icon: 'pi pi-fw pi-plus' }
+          { label: 'List', icon: 'pi pi-fw pi-user', routerLink:'/users/list', },
+          { label: 'Add', icon: 'pi pi-fw pi-plus',  routerLink:'/users/add' }
         ]
       },
       
