@@ -1,0 +1,24 @@
+.loginmain{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform{
+    .form-group{
+        input{
+            height: 50px;
+        }
+    }
+}
+
+.loginhead{
+    font-weight: bold;
+}
+
+.form-footer{
+    button{
+        height: 40px;
+    }
+}

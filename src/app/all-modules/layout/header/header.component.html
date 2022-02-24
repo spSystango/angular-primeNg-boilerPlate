@@ -4,32 +4,43 @@
      */ 
 -->
 <div class="layout-topbar">
-  <a class="layout-right-panel-button layout-topbar-icon" ><i class="pi pi-ellipsis-v"></i></a>
-
+  <a class="layout-right-panel-button layout-topbar-icon relative" (click)="barMenu.toggle($event)"><i class="pi pi-ellipsis-v"></i>
+    <p-menu [styleClass]="'profilemenu bar-menu'" [model]="profileMenuItems" [showTransitionOptions]="'0ms'"
+        [hideTransitionOptions]="'0ms'" #barMenu [popup]="true">
+      </p-menu>
+  </a>
   <a (click)="toggleSideBar()" class="layout-menu-button layout-topbar-icon">
     <i class="pi pi-bars"></i>
   </a>
   <a href="#" class="layout-topbar-logo">
     <img id="topbar-logo" src="assets/images/logo-roma-white.svg">
   </a>
-    <span class="layout-topbar-search">
-      <i class="pi pi-search"></i>
-      <input type="text" placeholder="Enter your search term">
-    </span>
+  <a (click)="toggleSideBar()" class="layout-topbar-icon sidebartoggler-icon">
+    <i class="pi pi-bars"></i>
+  </a>
+  <span class="layout-topbar-search">
+    <i class="pi pi-search"></i>
+    <input type="text" placeholder="Enter your search term">
+  </span>
   <ul class="topbar-menu">
     <li class="user-profile">
-      <a href="#" class="ng-star-inserted">
+      <a class="ng-star-inserted" (click)="profileMenu.toggle($event)">
         <img src="assets/images/avatar.png" alt="roma-layout">
         <div class="layout-profile-userinfo">
           <span class="layout-profile-name">Arlene Welch</span>
           <span class="layout-profile-role">Design Ops</span>
         </div>
       </a>
+      <p-menu [styleClass]="'profilemenu'" [model]="profileMenuItems" [showTransitionOptions]="'0ms'"
+        [hideTransitionOptions]="'0ms'" #profileMenu [popup]="true">
+      </p-menu>
     </li>
     <li>
-      <a href="#" class="layout-topbar-icon">
-        <i class="topbar-icon pi pi-fw pi-bell"></i>
-      </a>
+      <a pButton class="layout-topbar-icon" (click)="notificationMenu.toggle($event)"><i
+          class="topbar-icon pi pi-fw pi-bell"></i></a>
+      <p-menu [styleClass]="'notificationmenu'" [model]="notificationItems" [showTransitionOptions]="'0ms'"
+        [hideTransitionOptions]="'0ms'" #notificationMenu [popup]="true">
+      </p-menu>
     </li>
   </ul>
 </div>
